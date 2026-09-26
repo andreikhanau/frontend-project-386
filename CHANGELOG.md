@@ -1,0 +1,8 @@
+# Changelog
+
+## [0.2.0](https://github.com/andreikhanau/frontend-project-386/compare/v0.1.0...v0.2.0) (2026-09-26)
+
+
+### Features
+
+* каркас приложения «Календарь звонков» ([b70f995](https://github.com/andreikhanau/frontend-project-386/commit/b70f9954fc1594d00406aee500cf3f307a406f81))
