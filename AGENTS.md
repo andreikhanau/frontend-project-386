@@ -78,3 +78,20 @@ import { createApp } from './app'     // ❌ TS2835
 В `README.md` есть блоки, требуемые Хекслетом: бейдж `hexlet-check`, описание
 задания со ссылками, `<details>` про `hexlet-check.yml`, раздел «О Хекслете».
 Правь точечно, не переписывай файл целиком.
+
+## Agent skills
+
+### Issue tracker
+
+Issues и спецификации — в GitHub Issues, работа через `gh` CLI. Подробности в
+`docs/agents/issue-tracker.md`.
+
+### Triage labels
+
+Пять канонических ролей, строки лейблов совпадают с именами ролей. Подробности
+в `docs/agents/triage-labels.md`.
+
+### Domain docs
+
+Один контекст: `CONTEXT.md` и `docs/adr/` в корне. Подробности в
+`docs/agents/domain.md`.
