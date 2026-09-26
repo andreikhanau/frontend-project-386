@@ -1,6 +1,11 @@
 # Календарь звонков
 
-Учебный проект Hexlet: упрощённый аналог [Cal.com](https://cal.com) — сервис для планирования звонков по свободным временным слотам.
+[![hexlet-check](https://github.com/andreikhanau/frontend-project-386/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/andreikhanau/frontend-project-386/actions)
+
+Разработайте совместно с ИИ сервис для бронирования календаря
+
+Учебный проект Хекслета: https://ru.hexlet.io/programs/frontend
+Как это должно работать: https://files.hexlet.app/a/2ipc5m
 
 > **Статус проекта:** этап 1 — каркас приложения. Функциональность бронирования не реализована.
 
@@ -12,16 +17,22 @@
 - **Redux Toolkit** + **React Redux** — глобальное состояние
 - **Vitest** + **Testing Library** (jsdom) + **Supertest** (node) — тесты
 - **CSS Modules** + CSS-переменные — стили без UI-библиотек
-- **ESLint** + **typescript-eslint** — линтер (конфигурация `eslint.config.js`)
+- **ESLint** + **typescript-eslint** — линтер
 - **GitHub Actions** — CI и release-please
 
 Интерфейс на русском языке, имена файлов, компонентов и переменных — на английском.
 
-## Запуск
+## Установка
 
 ```bash
-npm install          # установка зависимостей
+git clone https://github.com/andreikhanau/frontend-project-386.git
+cd frontend-project-386
+npm install
+```
 
+## Использование
+
+```bash
 npm run dev          # клиент + бэкенд одновременно
 npm run dev:client   # только клиент (http://localhost:5173)
 npm run dev:server   # только бэкенд (http://localhost:3001)
@@ -52,7 +63,7 @@ Vite проксирует все запросы с `/api` на `http://localhost
 |---|---|---|
 | `GET` | `/api/health` | `{ "status": "ok" }` |
 
-## Структура
+## Структура проекта
 
 ```
 ├── index.html
@@ -89,15 +100,13 @@ Vite проксирует все запросы с `/api` на `http://localhost
 
 ## Тесты
 
-Vitest + Testing Library, окружение jsdom.
-
 ```bash
-npm test        # однократный прогон
-npm run test:watch  # watch-режим
+npm test           # однократный прогон
+npm run test:watch # watch-режим
 ```
 
-Настройки тестов — в секции `test` файла `vite.config.ts`.
-Общие для всех тестов настройки — в `src/setupTests.ts`.
+Настройки — в секции `test` файла `vite.config.ts`,
+общие для всех тестов — в `src/setupTests.ts`.
 
 Окружения различаются per-файл: клиентские тесты работают в `jsdom`
 (значение по умолчанию), тесты API — в `node`, объявленном директивой
@@ -143,3 +152,16 @@ npm run test:watch  # watch-режим
 - Страница бронирования по публичной ссылке
 - Типы звонков (длительность, интервалы, слоты)
 - Настройки профиля и часового пояса
+
+---
+
+<details>
+<summary>Автоматические тесты Хекслета</summary>
+
+Тесты запускаются на каждый коммит. За запуск отвечает файл `.github/workflows/hexlet-check.yml` — не удаляйте и не переименовывайте ни его, ни репозиторий.
+
+</details>
+
+## О Хекслете
+
+[Хекслет](https://ru.hexlet.io/) — школа программирования: авторские программы обучения с практикой, поддержкой наставников и реальными проектами, которые остаются в резюме. Этот репозиторий — один из таких проектов.
