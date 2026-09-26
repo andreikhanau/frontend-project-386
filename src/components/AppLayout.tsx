@@ -12,6 +12,7 @@ interface NavItem {
 
 const NAV_ITEMS: readonly NavItem[] = [
   { to: '/', label: 'Главная', end: true },
+  { to: '/booking', label: 'Записаться' },
 ]
 
 /**

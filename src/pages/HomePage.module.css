@@ -1,6 +1,13 @@
 .page {
   display: flex;
   flex-direction: column;
+  gap: var(--space-7);
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   gap: var(--space-4);
 }
 
@@ -15,21 +22,33 @@
   color: var(--color-text-muted);
 }
 
-.card {
-  margin-top: var(--space-4);
-  padding: var(--space-5);
-  background-color: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-sm);
+.howTo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
 }
 
-.cardTitle {
-  margin-bottom: var(--space-2);
+.howToTitle {
   font-size: var(--text-lg);
   font-weight: 600;
 }
 
-.cardText {
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.stepTitle {
+  font-weight: 500;
+}
+
+.stepText {
   color: var(--color-text-muted);
 }
