@@ -1,7 +1,7 @@
 {
   "name": "call-calendar",
   "private": true,
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Календарь звонков — упрощённый аналог Cal.com (учебный проект Hexlet)",
   "type": "module",
   "engines": {
